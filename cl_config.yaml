@@ -35,7 +35,7 @@ cookiecloud:
       # 视频/内容平台
       https://www.bilibili.com|30
       https://www.douyin.com|30
-      https://channels.weixin.qq.com|30  # 视频号
+      https://channels.weixin.qq.com|30
       
       # 电商网站
       https://www.taobao.com|30

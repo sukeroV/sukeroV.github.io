@@ -14,7 +14,7 @@ cookiecloud:
   endpoint: "http://${globals.server_ip}:1002"  # 使用全局变量
   # uuid: ""  # 唯一标识符（自动生成，无需手动配置）
   # 同步密码
-  password: "7yD9ScgnQh6NPZYov8f68AZ"
+  password: "7yD9ScgnQh6NPZYov8f68Z"
   
   # 上传配置
   upload:

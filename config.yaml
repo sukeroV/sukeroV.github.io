@@ -13,7 +13,7 @@ cookiecloud:
   # 服务器配置
   endpoint: "http://192.168.164.4:8088"  # 同步服务器地址
   # uuid: ""  # 唯一标识符（自动生成，无需手动配置）
-  password: "nikrhqpMBh"  # 同步密码
+  password: "nikrhqpMBh123"  # 同步密码
   headers: ""  # 自定义请求头
   
   # 同步配置

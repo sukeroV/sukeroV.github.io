@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>CookieCloud 配置展示</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
         }
         h1 {
-            color: #007BFF;
+            color: #333;
+            text-align: center;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
     </style>
 </head>
 <body>
-    <h1>只有这个网页,获取 p 标签作为项目IP,xpath:(//p)[1]</h1>
-    <p>192.168.164.4</p>
+    <div class="container">
+        <h1>CookieCloud 插件配置</h1>
+        <pre id="yaml-content">加载中...</pre>
+    </div>
+    <script src="config-loader.js"></script>
 </body>
 </html>

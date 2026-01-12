@@ -6,6 +6,36 @@
 globals:
   # 服务器 IP 地址
   server_ip: "192.168.164.4"
+db:
+  mongodb: 
+    host: "${globals.server_ip}"
+    port: 27017
+    username: "root"
+    password: "12345678"
+    database_name: "c"
+    auth_source: "admin"
+    ssl: false
+    timeout: 30
+    max_pool_size: 100
+    min_pool_size: 10
+    max_idle_time_ms: 30000
+    server_selection_timeout_ms: 30000
+    socket_timeout_ms: 30000
+    connect_timeout_ms: 30000
+    retry_writes: true
+    retry_reads: true
+  redis:
+    host: "${globals.server_ip}"
+    port: 6379
+    password: "vT9hMq7K4W"
+    db: 0
+    timeout: 30
+    max_connections: 100
+    min_connections: 10
+    max_idle_time_ms: 30000
+    server_selection_timeout_ms: 30000
+    socket_timeout_ms: 30000
+    connect_timeout_ms: 30000
 
 # CookieCloud 插件配置
 cookiecloud:

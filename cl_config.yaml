@@ -37,6 +37,28 @@ db:
     socket_timeout_ms: 30000
     connect_timeout_ms: 30000
 
+# 代理池配置
+proxy_pool:
+  # 代理池服务器地址得到的是JSON格式的代理列表 示例:
+  #{
+  #   "status": "success",
+  #   "proxies": [
+  #     {
+  #       "ip": "192.168.164.4",
+  #       "port": 60000,
+  #       "public_ip": "127.0.0.1"
+  #     },
+  #     {
+  #       "ip": "192.168.164.4",
+  #       "port": 60001,
+  #       "public_ip": "127.0.0.1"
+  #     }.......
+  #   ],
+  #   "count": 42
+  #}
+  get_proxy_pool_list: "http://${globals.server_ip}/proxy-pool/"
+  get_proxy: "http://ip/proxy-pool/probe?port=port"
+
 # CookieCloud 插件配置
 cookiecloud:
   # 服务器配置（通用）

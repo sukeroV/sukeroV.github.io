@@ -126,7 +126,11 @@ cookiecloud:
     interval: 1
     # Cookie过期时间（分钟，默认365天）
     expire_minutes: 525600
-  
+
+# VictoriaLogs配置
+VictoriaLogs:
+  Port: "${globals.server_ip}:9428"
+  Service: "bilibili-comment-tool"
 
 
 # 其他项目配置（后续可添加）

@@ -129,7 +129,7 @@ cookiecloud:
 
 # VictoriaLogs配置
 VictoriaLogs:
-  Port: "${globals.server_ip}:9428"
+  Port: "http://${globals.server_ip}:9428"
   Service: "bilibili-comment-tool"
 
 

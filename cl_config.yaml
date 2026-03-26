@@ -56,7 +56,7 @@ proxy_pool:
   #   ],
   #   "count": 42
   #}
-  get_proxy_pool_list: "http://${globals.server_ip}:1003/proxy-pool/"
+  get_proxy_pool_list: "http://${globals.server_ip}:1003/"
   get_proxy: "http://${globals.server_ip}:1003/probe?port=port"
 
 # CookieCloud 插件配置

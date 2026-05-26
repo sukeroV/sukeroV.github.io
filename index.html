@@ -11,9 +11,30 @@
             font-family: 'Courier New', Courier, monospace;
             background-color: #f5f5f5;
         }
+        .nav-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff6b9d 0%, #d63384 100%);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(214, 51, 132, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(214, 51, 132, 0.4);
+        }
         pre {
             margin: 0;
             padding: 20px;
+            padding-top: 60px;
             white-space: pre-wrap;
             word-wrap: break-word;
             background-color: white;
@@ -22,6 +43,7 @@
     </style>
 </head>
 <body>
+    <button class="nav-btn" onclick="location.href='rank.html'">📊 查看排行榜</button>
     <pre id="yaml-content">加载中...</pre>
     <script>
         // 加载 config.yaml 文件
